@@ -41,7 +41,7 @@ function App() {
 
     function send(){
       setstatus(true)
-      axios.post("http://localhost:3000/sendemail",{msg:msg,emailsList:emailsList})
+      axios.post("https://bulkmail-fhc2.vercel.app/sendemail",{msg:msg,emailsList:emailsList})
       .then(function(data){
         if(data.data==true)
         {
