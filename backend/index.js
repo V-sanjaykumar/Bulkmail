@@ -9,7 +9,7 @@ app.use(express.json())
 app.use(cors())
 
 
-mongoose.connect("mongodb://127.0.0.1:27017/passkey").then(function(){
+mongoose.connect("mongodb+srv://sanjay:123@cluster0.dkucaqo.mongodb.net/passkey?retryWrites=true&w=majority&appName=Cluster0").then(function(){
     console.log("connection to DB")
 
 }).catch(function(){
